@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form-group">
+      <label>Email:</label>
+      <input
+        class="form-control"
+        id="email"
+        type="email"
+        placeholder="Enter Your Email"
+      />
+      <button class="btn-btn-primary" onclick="getCode()">Get Code</button>
+    </div>
+    <div class="form-group">
+      <label>Code:</label>
+      <input
+        class="form-control"
+        id="confirm"
+        type="number"
+        placeholder="Enter Code"
+      />
+      <button onclick="confirm()">Verify Code</button>
+    </div>
+
+    <script src="script.js"></script>
+    <style>
+      * {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-color: #e8e8e8;
+      }
+
+      .container {
+        margin: 10em auto;
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        background-color: white;
+        padding: 30px 20px;
+        border-radius: 10px;
+      }
+
+      input,
+      button {
+        border: none;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 7px;
+      }
+
+      input {
+        border: lightgrey 1px solid;
+      }
+
+      p {
+        margin-bottom: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      button {
+        background-color: #0084ff;
+        color: white;
+        font-family: sans-serif;
+      }
+    </style>
+  </body>
+</html>
